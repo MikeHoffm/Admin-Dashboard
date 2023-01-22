@@ -1,3 +1,110 @@
-h1 {
-    color: blue;
+html {
+   margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* CSS GRID - PAGE LAYOUT*/
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+header {
+    background-color: rgb(245, 252, 255);
+    grid-column: 2 / 3;
+}
+
+main {
+    background-color: rgb(219, 202, 202);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.dashboard {
+    background-color:rgb(0, 183, 255);
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+footer {
+    grid-column: 2 / 4;
+}
+
+
+/*CSS GRID - HEADER */ 
+
+.head-top > ul {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
+
+.head-top > ul > li {
+    border: 2px solid blue;
+}
+
+.head-bottom > ul {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.head-bottom > ul > li {
+    border: 2px solid red;
+}
+
+/* CSS GRID - DASHBOARD */
+
+.dashboard {
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+}
+
+.dash-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* CSS GRID - MAIN */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    grid-row: 1/3;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+/* COLOR STYLING */ 
+
+.dashboard {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+
+.projects {
+    padding: 1rem;
+}
+
+.cards {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.widget {
+    height: 45%;
 }
